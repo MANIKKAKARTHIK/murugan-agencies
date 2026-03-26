@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messages</title>
+</head>
+
+<body>
+
+<h2>Admin Messages</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+    </tr>
+
+    {% for msg in messages %}
+    <tr>
+        <td>{{ msg.id }}</td>
+        <td>{{ msg.name }}</td>
+        <td>{{ msg.email }}</td>
+        <td>{{ msg.message }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+<footer class="footer">
+    <div class="footer-content">
+        <h3>MURUGAN AGENESIS</h3>
+        <p>Custom Furniture | Fine Woodworking</p>
+
+        <p class="copyright">
+            © 2026 Murugan Agenesis. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

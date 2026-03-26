@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo-img">
+        <span>MURUGAN AGENCIES</span>
+    </div>
+
+    <nav>
+        <a href="/">HOME</a>
+        <a href="/services">SERVICES</a>
+        <a href="/about">ABOUT</a>
+        <a href="/contact">CONTACT</a>
+    </nav>
+</header>
+
+<section class="contact-hero">
+
+    <div class="contact-overlay">
+
+        <h1>GET IN TOUCH</h1>
+        <p>We design premium wood interiors for your dream space</p>
+
+        <form class="contact-form" method="POST">
+
+            <div class="input-box">
+                <input type="text" name="name" required>
+                <label>Your Name</label>
+            </div>
+
+            <div class="input-box">
+                <input type="email" name="email" required>
+                <label>Your Email</label>
+            </div>
+
+            <div class="input-box">
+                <textarea name="message" rows="4" required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <button type="submit">SEND MESSAGE</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<div class="scroll-box">
+    <div class="scroll-text">
+        ✨ Custom Furniture ✨ Premium Woodwork ✨ Interior Designs ✨ Murugan Agencies ✨
+    </div>
+</div>
+
+<footer class="footer">
+    <h3>MURUGAN AGENCIES</h3>
+    <p>Custom Furniture | Fine Woodworking</p>
+    <p>© 2026 Murugan Agencies. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
